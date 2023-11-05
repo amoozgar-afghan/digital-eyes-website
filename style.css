@@ -20,8 +20,9 @@ h4 {
 .jumbotron {
   background-color: #0067B4;
   color: #fff;
-  padding: 100px 25px;
+  padding: 100px 30px;
   font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
 }
 .container-fluid {
   padding: 60px 50px;
@@ -40,7 +41,7 @@ h4 {
 .thumbnail {
   padding: 0 0 15px 0;
   border: none;
-  border-radius: 0;
+  border-radius: 5px;
 }
 .thumbnail img {
   width: 100%;
@@ -232,9 +233,54 @@ footer .glyphicon {
   margin-right: 10px;
 }
 
+.thumbnail:hover {
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+.service-container {
+  /* max-width: 50%; */
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.service-img {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.services-text {
+  padding: 10px 30px;
+}
+
+.services-text h2 {
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.services-text p {
+  font-size: 18px;
+  text-align: justify;
+  
+}
+
+.services-btn {
+  font-size: 16px;
+  text-transform: capitalize;
+  border: 1px solid #0067B4;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+
+.services-btn:hover {
+  color: #fff;
+  background-color: #0067B4;
+}
+
 
 /* Styles for RTL languages */
 
 .c-lang {
   font-size: 1.85rem;
 }
+
