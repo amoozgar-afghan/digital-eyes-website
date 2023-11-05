@@ -275,6 +275,7 @@ footer .glyphicon {
 .services-btn:hover {
   color: #fff;
   background-color: #0067B4;
+  cursor: pointer;
 }
 
 
