@@ -42,6 +42,10 @@ h4 {
   padding: 0 0 15px 0;
   border: none;
   border-radius: 5px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .thumbnail img {
   width: 100%;
@@ -221,12 +225,57 @@ footer .glyphicon {
   margin-top: .8em;
 }
 
-#hero .container {
-  margin-top: 100px;
+#hero {
+  height: 100vh;
+  overflow: hidden;
 }
 
-.c-hero-text {
-  margin-top: 4em;
+#hero .carousel-caption {
+  top: 30vh;
+  left: 25vw;
+  text-align: left;
+}
+
+#hero .carousel-caption h3 {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+#hero .carousel-caption p {
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+#hero .carousel-indicators {
+  position: relative;
+  top: 93vh;
+}
+
+.btn-main {
+  background-color: #fff;
+  border-color: #0067B4;
+  color: #0067B4;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 10px 30px;
+}
+
+.btn-main:hover {
+  background-color: #0067B4;
+  color: #fff;
+}
+
+.hero-img {
+  &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000,#0a0a0a);
+        opacity: .6; 
+  }
 }
 
 .c-lang-li a i {
@@ -236,6 +285,10 @@ footer .glyphicon {
 .thumbnail:hover {
   box-shadow: 3px 3px 10px #ccc;
 }
+
+#services {
+  background-color: #fafafa;
+} 
 
 .service-container {
   /* max-width: 50%; */
@@ -276,6 +329,63 @@ footer .glyphicon {
   color: #fff;
   background-color: #0067B4;
   cursor: pointer;
+}
+
+
+/* Contact Section Styles */
+.contact-section {
+  background-color: #0067B4;
+  color: #fff;
+}
+
+.contact-section h2 {
+  font-size: 24px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.map-container iframe {
+  outline: 5px solid #fcfcfc;
+  /* border: 2px solid black; */
+  outline-offset: 2px;
+  box-shadow: 5px 5px 15px 5px #303030, 2px 2px 5px gray inset;
+  /* box-shadow: -5px -5px 15px black; */
+}
+
+.contact-info {
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+.contact-info p {
+  font-size: 18px;
+}
+
+
+/* Footer Section Styles */
+.footer-logo {
+  width: 300px;
+}
+
+.footer-content {
+  margin-bottom: 30px;
+}
+
+.footer-content h4{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.footer-content ul {
+  list-style: none;
+  font-size: 18px;
+  padding: 0;
+}
+
+.divider {
+  border-bottom: 1px solid #f3f3f3;
+  width: 400px;
+  margin: 10px 0;
 }
 
 

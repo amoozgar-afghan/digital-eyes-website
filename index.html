@@ -54,19 +54,51 @@
 </nav>
 
 <section id="hero">
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-push-7 pull-left">
-                    <img src="images/illustration.png" alt="Document Processing Illustration" class="img-responsive">
-                </div>
-                <div class="col-md-7 col-md-pull-5 c-hero-text">
-                    <h1>Let us take care of your documents</h1> 
-                    <p>We will proccess your documents in Dubai, so you can easily explore, do business, and start your education in Dubai.</p>
-                </div>
-            </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <div class="hero-img">
+          <img src="images/lg-business.jpg" alt="Dubai" style="width:100%;">
         </div>
-    </div>    
+        <div class="carousel-caption">
+          <h3>Business in Dubai | UAE</h3>
+          <p>Dubai is always so much fun!</p>
+          <button class="btn btn-main">Let's Get Start</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="hero-img">
+          <img src="images/lg-living-dark.jpg" alt="Dubai" style="width:100%;">
+        </div>
+        <div class="carousel-caption">
+          <h3>Living  your dream life in Dubai | UAE</h3>
+          <p>Thank you, Dubai!</p>
+          <button class="btn btn-main">Let's Get Start</button>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="hero-img">
+          <img src="images/lg-vacation.jpg" alt="Dubai" style="width:100%;">
+        </div>
+        <div class="carousel-caption">
+          <h3>Have awesome vacation in Dubai</h3>
+          <p>We love Dubai Marine!</p>
+          <button class="btn btn-main">Let's Get Start</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Container (About Section) -->
@@ -140,7 +172,7 @@
   </div>
 </div> -->
 
-<section id="services" class="container-fluid bg-grey">
+<section id="services" class="container-fluid">
   <div class="container text-center">
     <h2>What we can do for you</h2><br>
     <h4>Our Services</h4>
@@ -153,7 +185,7 @@
           <div class="services-text">
             <h2>Immigration Services</h2>
             <p>Looking for a smooth path to your dream career in the UAE? Our Immigration Services will guide you through visa requirements, making your journey stress-free.</p>
-            <a href="services/index.html" class="btn btn-block services-btn">Learn More</a>
+            <a href="services/index.html#immigration" class="btn btn-block services-btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -165,7 +197,7 @@
           <div class="services-text">
             <h2>Business Setup Services</h2>
             <p>Start your business in the UAE hassle-free with our Business Setup Services. We handle registrations and renewals, so you can focus on your business.</p>
-            <a href="business-setup-services/index.html" class="btn btn-block services-btn">Learn More</a>
+            <a href="services/index.html#business-setup" class="btn btn-block services-btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -177,7 +209,7 @@
           <div class="services-text">
             <h2>Typing Services</h2>
             <p>Let us take care of the paperwork for your Emirates ID and Medical needs. We type the documents, so you can breeze through the process.</p>
-            <a href="typing-services/index.html" class="btn btn-block services-btn">Learn More</a>
+            <a href="services/index.html#typing" class="btn btn-block services-btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -193,7 +225,7 @@
               Tasheel Services
             </h2>
             <p>Need workforce solutions? Our TAS-HEEL Services manage employment visas and labor cards, making hiring talent a breeze.</p>
-            <a href="tasheel-services/index.html" class="btn btn-block services-btn">Learn More</a>
+            <a href="services/index.html#tasheel" class="btn btn-block services-btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -205,7 +237,7 @@
           <div class="services-text">
             <h2>Translation Services</h2>
             <p>Break down language barriers with our Translation Services. Our experts ensure seamless communication for your documents and content.</p>
-            <a href="translation-services/index.html" class="btn btn-block services-btn">Learn More</a>
+            <a href="services/index.html#translation" class="btn btn-block services-btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -215,40 +247,93 @@
 
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+<section id="contact" class="container-fluid contact-section">
+  <div class="container">
+    <h2 class="text-center">CONTACT</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="contact-info">
+          <p>Contact us and we'll get back to you within 24 hours.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Al Zarooni Building, 1<sup>st</sup> floor - Al Rigga Rd - Deira - Dubai</p>
+          <p><span class="glyphicon glyphicon-phone"></span> +971 0000000000</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> info@digital-eyes.com</p>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+      <div class="col-sm-7">
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1804.119505425622!2d55.324763733966776!3d25.262544034543435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5cc54a505b49%3A0x79a14f1769c10a51!2sAl%20Zarooni%20-%20Al%20Rigga%20Rd%20-%20Deira%20-%20Dubai!5e0!3m2!1sen!2sae!4v1699342702099!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
+      <!-- <div class="col-sm-7 slideanim">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-default pull-right" type="submit">Send</button>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+
+<footer class="container-fluid">
+  <div class="text-center">
+    <a href="#myPage" class="ml-auto" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+  </div>
+
+
+  <div class="footer-content">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="footer-logo">
+          <img src="images/DIGITAL EYES - PNG - editted.png" class="img-responsive" alt="Logo">
+        </div>
+        
+      </div>
+      <div class="col-sm-4">
+        <div class="footer-services">
+          <h4>Services</h4>
+          <div class="divider"></div>
+          <ul>
+            <li><a href="services/index.html#immigration">Immigration Services</a></li>
+            <li><a href="services/index.html#business-setup">Business Setup Services</a></li>
+            <li><a href="services/index.html#typing">Typing Services</a></li>
+            <li><a href="services/index.html#tasheel">Tasheel Services</a></li>
+            <li><a href="services/index.html#translation">Translation Services</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <ul>
+          <li><a href="services/index.html#typing">Frequently Asked Questions</a></li>
+          <li><a href="#" >About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="divider"></li>
+          <div class="dropdown">
+            <a class="btn dropdown-toggle" type="button" data-toggle="dropdown"> English | US
+            &nbsp;&nbsp; <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">العربیة</a></li>
+            </ul>
+          </div> 
+        </ul>
       </div>
     </div>
   </div>
-</div>
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <div class="cridets">
-    <a href="https://www.freepik.com/free-vector/work-migration-isometric-composition-with-plane-tickets-suitcase-man-leaving-country-employment-abroad-vector-illustration_43869022.htm#query=visa%20processing&position=4&from_view=search&track=ais">Illustration Image by macrovector</a> on Freepik
+
+  <div class="copyrights">
+    <p>Copyright © 2023 Digital Eyes. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
   </div>
 </footer>
 
