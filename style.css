@@ -350,6 +350,7 @@ footer .glyphicon {
   outline-offset: 2px;
   box-shadow: 5px 5px 15px 5px #303030, 2px 2px 5px gray inset;
   /* box-shadow: -5px -5px 15px black; */
+  width: 100%;
 }
 
 .contact-info {
