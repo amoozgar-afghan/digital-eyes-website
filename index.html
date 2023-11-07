@@ -67,7 +67,10 @@
 
       <div class="item active">
         <div class="hero-img">
-          <img src="images/lg-business.jpg" alt="Dubai" style="width:100%;">
+          <picture>
+            <source media="(min-width:900px)" srcset="images/lg-business.jpg">
+            <img src="images/sm-business.jpg" alt="Dubai" style="width:100%;">
+          </picture> 
         </div>
         <div class="carousel-caption">
           <h3>Business in Dubai | UAE</h3>
@@ -78,7 +81,10 @@
 
       <div class="item">
         <div class="hero-img">
-          <img src="images/lg-living-dark.jpg" alt="Dubai" style="width:100%;">
+          <picture>
+            <source media="(min-width:900px)" srcset="images/lg-living-dark.jpg">
+            <img src="images/sm-living.jpg" alt="Dubai" style="width:100%;">
+          </picture>
         </div>
         <div class="carousel-caption">
           <h3>Living  your dream life in Dubai | UAE</h3>
@@ -89,7 +95,10 @@
     
       <div class="item">
         <div class="hero-img">
-          <img src="images/lg-vacation.jpg" alt="Dubai" style="width:100%;">
+          <picture>
+            <source media="(min-width:900px)" srcset="images/lg-vacation.jpg">
+            <img src="images/sm-vacation.jpg" alt="Dubai" style="width:100%;">
+          </picture>
         </div>
         <div class="carousel-caption">
           <h3>Have awesome vacation in Dubai</h3>
@@ -318,7 +327,7 @@
           <li><a href="services/index.html#typing">Frequently Asked Questions</a></li>
           <li><a href="#" >About Us</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="divider"></li>
+          <div class="divider"></div>
           <div class="dropdown">
             <a class="btn dropdown-toggle" type="button" data-toggle="dropdown"> English | US
             &nbsp;&nbsp; <span class="caret"></span></a>

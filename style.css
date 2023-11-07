@@ -226,12 +226,11 @@ footer .glyphicon {
 }
 
 #hero {
-  height: 100vh;
   overflow: hidden;
 }
 
 #hero .carousel-caption {
-  top: 30vh;
+  top: 15%;
   left: 25vw;
   text-align: left;
 }
@@ -247,8 +246,21 @@ footer .glyphicon {
 }
 
 #hero .carousel-indicators {
-  position: relative;
-  top: 93vh;
+  top: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+
+  #hero .carousel-caption {
+    top: 30%;
+  }
+  
+  #hero .carousel-indicators {
+    top: 75%;
+  }
 }
 
 .btn-main {
@@ -385,8 +397,9 @@ footer .glyphicon {
 
 .divider {
   border-bottom: 1px solid #f3f3f3;
-  width: 400px;
-  margin: 10px 0;
+  width: 70%;
+  margin: 10px 0px;
+  
 }
 
 
