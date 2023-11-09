@@ -151,13 +151,14 @@ h4 {
   border-radius: 0;
   font-family: Montserrat, sans-serif;
 
-  padding: 10px 0;
   font-weight: 900;
 }
 
 .navbar li a,
 .navbar .navbar-brand {
   color: #0067B4 !important;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
 }
 
 .navbar-nav li a:hover,
@@ -261,15 +262,22 @@ footer .glyphicon {
   margin-top: .8em;
 }
 
+.c-navbar-right {
+  margin-top: .8em;
+}
+
+.btn-main-colored {
+  border-radius: 40px;
+  padding: 10px 50px;
+  font-size: inherit;
+  font-weight: bold;
+}
+
 @media only screen and (min-width: 768px) {
   .c-navbar-ul {
     margin-left: 10em;
     margin-top: .8em;
   }
-}
-
-.c-navbar-right {
-  margin-top: .8em;
 }
 
 #hero {
@@ -283,13 +291,19 @@ footer .glyphicon {
 }
 
 #hero .carousel-caption h3 {
-  font-size: 4rem;
-  margin-bottom: 30px;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
 }
 
 #hero .carousel-caption p {
-  font-size: 2rem;
-  margin-bottom: 50px;
+  font-size: 1.75rem;
+  margin-bottom: 25px;
+}
+
+#hero .carousel-em {
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #hero .carousel-indicators {
@@ -303,10 +317,21 @@ footer .glyphicon {
 
   #hero .carousel-caption {
     top: 30%;
+    width: 50%;
   }
 
   #hero .carousel-indicators {
     top: 75%;
+  }
+
+  #hero .carousel-caption h3 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+  
+  #hero .carousel-caption p {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
   }
 }
 
