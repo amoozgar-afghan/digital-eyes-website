@@ -480,8 +480,85 @@ footer {
 }
 
 
-/* Styles for RTL languages */
+/* Styles for Services and About Pages */
+.content {
+  margin-bottom: 40px;
+}
 
+.content-container {
+  width: 95%;
+}
+
+.content p {
+  font-size: 20px;
+  color: #666;
+  text-align: justify;
+}
+
+.content h2, .content h3 {
+  color: #333;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.content h2 {
+  font-size: 4.5rem;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.content h3 {
+  font-size: 3.5rem;
+  margin: 20px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .content-container {
+    width: 49%;
+  } 
+  
+  .service-title {
+    padding-top: 60px;
+    padding-left: 10px;
+  }
+}
+
+.service-img {
+  padding-bottom: 2px;
+}
+
+.service-title .subtitle {
+  font-size: 1.8rem;
+  margin-top: -8px;
+  margin-left: 5px;
+}
+
+.services-details {
+  padding-top: 60px
+}
+
+.services-header {
+  padding-top: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .services-header {
+    padding-top: 100px;
+  }  
+}
+
+.about-logo {
+  margin-bottom: 20px;
+}
+
+.about-title {
+  margin-top: 5%;
+}
+
+/* End of styles for Services and About pages */
+
+/* Styles for RTL languages */
 .c-lang {
   font-size: 1.85rem;
 }
